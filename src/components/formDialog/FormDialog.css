@@ -1,0 +1,179 @@
+.MyDialog {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.MyDialog .MainInfo{
+    display: flex;
+    flex-flow: column;
+    padding: 1rem;
+}
+
+.MyDialog .AdditionalInfo {
+    display: flex;
+    flex-flow: column;
+    padding: 1rem;
+}
+
+.MyDialog .MainInfo .Image{
+    width: 400px;
+    height: 200px;
+    background: #ddd;
+    border-radius: 8px;
+    margin: 1rem 0;
+    object-fit: cover;
+}
+
+.MyDialog .MainInfo .Image img{
+    width: 400px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.MyDialog p {
+    font-weight: 500;
+}
+
+.MyDialog textarea {
+    resize: none;
+    padding: 8px;
+    height: 100px;
+    width: 384px;
+    font-size: 1.2rem;
+    margin: 1rem 0;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+.MyDialog input {
+    resize: none;
+    padding: 8px;
+    width: 384px;
+    font-size: 1rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin: 1rem 0;
+    outline: none;
+}
+
+.MyDialog .switch {
+    margin: 8px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.MyDialog .CVV{
+    margin-bottom: 2rem;
+}
+
+.MyDialog .Expiry input {
+    margin: 0;
+}
+.MyDialog .Expiry p {
+    margin: 2px;
+    font-weight: 500;
+}
+
+.MyDialog .ValueForm {
+    background: #eee;
+    display: flex;
+    flex-flow: column;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,.2);
+}
+
+.MyDialog .ValueForm p {
+    margin: 8px 0;
+}
+
+.MyDialog .moneyInput {
+    margin-top: 0;
+    border: 2px solid green
+}
+
+@media only screen and (max-width: 450px) {
+    .MyDialog {
+        flex-flow: column;
+    }
+
+    .MyDialog .MainInfo{
+        padding: 0;
+    }
+
+    .MyDialog .AdditionalInfo {
+        padding: 0;
+    }
+
+    .MyDialog .AdditionalInfo .ValueForm{
+        padding: 0;
+        width: 95%;
+        margin: 0 auto;
+        margin-bottom: 2rem;
+    }
+
+    .MyDialog .MainInfo .Image {
+        width: 95%;
+        margin: 1rem auto;
+    }
+    .MyDialog .MainInfo .Image img {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .MyDialog .MainInfo .MuiFormControl-root {
+        width: 95%;
+        margin: 0 auto;
+    }
+    .MyDialog .AdditionalInfo .MuiFormControl-root {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .MyDialog .MainInfo input {
+        width: 90%;
+        margin: 1rem auto;
+    }
+    .MyDialog .AdditionalInfo input {
+        width: 90%;
+        margin: 1rem auto;
+    }
+    .MyDialog .AdditionalInfo .InputBox {
+        width: 100%;
+        display: flex;
+        flex-flow: column;
+    }
+
+
+    .MyDialog .MainInfo textarea {
+        width: 90%;
+        margin: 1rem auto;
+    }
+    .MyDialog .MainInfo h3 {
+        width: 100%;
+        margin: 1rem auto;
+        text-align: center;
+    }
+
+    .MyDialog .AdditionalInfo .switch{
+        width: 95%;
+        margin: 1rem auto;
+    }
+    .MyDialog .AdditionalInfo p{
+        text-align: center;
+    }
+
+    .MyDialog .AdditionalInfo .CVV{
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+    .MyDialog .AdditionalInfo .Expiry{
+        width: 95%;
+    }
+    .MyDialog .AdditionalInfo .Expiry input{
+        width: 95%;
+    }
+}

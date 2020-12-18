@@ -1,0 +1,122 @@
+.Layout {
+
+}
+
+.Layout .Header img {
+    width: 100%;
+    height: 90vh;
+    object-fit: cover;
+    position: relative;
+}
+
+.Layout .HeaderContext {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    top: 25%;
+    padding: 0 4rem;
+}
+
+.Layout .HeaderContext h1 {
+    font-size: 4rem;
+    color: #fff;
+    text-shadow: 0 8px 16px rgba(0,0,0,.3);
+    text-align: left;
+    display: inline-block
+}
+
+.Layout .HeaderContext button{
+    border: none;
+    padding: 1.5rem 4rem;
+    font-size: 1.5rem;
+    background: #212121;
+    border: 1px solid #212121;
+    color: white;
+    outline: none;
+    transition: .3s ease-in-out;
+}
+
+.Layout .HeaderContext button:hover{
+    background: none;
+    border: 1px solid #212121;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+    box-shadow: 0 8px 12px rgba(0,0,0,.3);
+    color: #212121;
+}
+
+.Layout .HeaderContext .Right {
+    width: 50%;
+    height: 100vh;
+}
+
+.Layout .HeaderContext .Left {
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+}
+
+.Layout .HeaderContext .Right img {
+    width: 60%;
+}
+
+.Layout .HowItWorks h1{
+    font-size: 3rem;
+    color: #00bcd4;
+    margin-top: 4rem;
+}
+
+.Layout .HowItWorks .WorkFlow {
+    display: flex;
+    align-items: center;
+}
+
+.Layout .HowItWorks .WorkFlow img {
+    width: 50%;
+    object-fit: cover;
+}
+.Layout .HowItWorks .WorkFlow h3 {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: 400;
+}
+
+.Layout .AcceptGifts h1 {
+    font-size: 3rem;
+    color: #00bcd4;
+    margin-top: 4rem;
+}
+
+
+@media only screen and (max-width: 450px) {
+    .Layout .HeaderContext {
+        padding: 0;
+        flex-flow: column-reverse;
+        top: 10%;
+    }
+
+    .Layout .HeaderContext .Left {
+        height: auto;
+        width: 100%;
+        align-items: center;
+    }
+
+    .Layout .HeaderContext .Left h1{
+        text-align: center;
+    }
+
+    .Layout .HeaderContext .Right {
+        height: auto;
+    }
+    .Layout .HeaderContext .Right img {
+        width: 100%;
+    }
+
+    .Layout .HowItWorks .WorkFlow {
+        flex-flow: column;
+    }
+}

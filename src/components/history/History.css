@@ -1,0 +1,52 @@
+.History {
+    width: 60%;
+    margin: 2rem auto;
+}
+
+.History h1 {
+    font-size: 3rem;
+    text-align: left;
+}
+
+.History .List .Item {
+    background: #212121;
+    padding: 16px;
+    margin: 8px 0;
+    text-align: left;
+    transition: .3s ease-in-out;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.History .List .Item img {
+    width: 15%;
+    object-fit: cover;
+    background: #ddd;
+    border-radius: 8px;
+}
+
+.History .List .Item h3 {
+    margin: 0;
+}
+
+.History .Item p{
+    margin: 4px 0;
+}
+
+.History .Item:hover {
+    box-shadow: 0 8px 12px rgba(0,0,0,.1);
+    transform: scale(1.02);
+    transition: .3s ease-in-out;
+}
+
+.History .Item .green {
+    color: greenyellow;
+}
+
+@media only screen and (max-width: 450px) {
+    .History {
+        width: 90%;
+    }   
+}

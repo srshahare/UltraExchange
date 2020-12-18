@@ -1,0 +1,143 @@
+.Navbar {
+    display: flex;
+    justify-content: space-evenly;
+    height: 75px;
+    background: #212121;
+    align-items: center;
+    box-shadow: 0 8px 8px rgba(0,0,0,.1);
+    width: 100%;
+}
+
+.Navbar span{
+    color: #00bcd4;
+}
+
+.Navbar h2,
+.Navbar p, 
+.Navbar a{
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.Navbar .Second {
+    display: flex;
+}
+
+.Navbar .Second p {
+    margin: 0 1rem;
+}
+
+.Navbar .Third {
+    display: flex;
+    align-items: center;
+}
+
+.Navbar .Third p{
+    margin-left: 8px;
+}
+
+.Navbar button {
+    padding: 8px 1rem;
+    border: none;
+    background: #fff;
+    color: black;
+    border: 1px solid #212121;
+    font-size: 1rem;
+    outline: none;
+}
+
+.Navbar button:hover {
+    cursor: pointer;
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+
+}
+
+.Navbar .menu {
+    display: none;
+}
+
+#myLinks {
+    display: none;
+}
+
+@media only screen and (max-width: 450px) {
+    .Navbar .menu {
+        display: inline-block;
+        color: white;
+        margin-right: 1rem;
+    }
+
+    .Navbar {
+        display: block;
+    }
+
+    .Navbar #myLinks {
+        background: #212121;
+        position: relative;
+        z-index: 800;
+        padding: 1rem;
+    }
+
+    .Navbar .MobileContainer {
+        display: flex;
+        flex-flow: column;
+        width: 100%;
+        position: relative;
+        z-index: 1000;
+        align-items: flex-start;
+    }
+
+    .Navbar .MobileContainer p {
+        margin-left: 0;
+    }
+
+    .Navbar .MobileUser {
+        display: inline-block;
+        position: relative;
+        z-index: 1000;
+        width: 100%;
+        margin-bottom: 8px;
+        text-align: left;
+    }
+
+    .Navbar .MobileUser .UserContext {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .Navbar .MobileUser .UserContext p {
+        margin-left: 1rem;
+    }
+
+    .Navbar .MobileContainer p{
+        margin-top: 0;
+        margin-bottom: 1rem;
+    }
+
+    .Navbar .MobileMenu{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .Navbar .MobileMenu .First {
+        margin-left: 1rem;
+    }
+
+    .Navbar .Second {
+        display: none;
+    }
+
+    #desktopMenu {
+        display: none;
+    }
+
+    .Navbar .Third {
+        display: none;
+    }
+}

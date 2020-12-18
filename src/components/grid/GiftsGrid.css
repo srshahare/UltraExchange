@@ -1,0 +1,22 @@
+.GiftsList {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.GiftCard {
+    flex: 1 0 21%;
+    margin: 8px;
+}
+
+.GiftCard img {
+    width: 80%;
+    height: 100px;
+    object-fit: cover;
+}
+
+@media only screen and (max-width: 450px) {
+    .GiftCard {
+        flex: 1 0 40%;
+    }
+}

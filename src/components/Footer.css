@@ -1,0 +1,56 @@
+.Footer {
+    background: #212121;
+}
+
+.Footer .Bottom {
+    background: #000;
+    padding: 2rem 0;
+}
+
+.Footer p {
+    color: #bbb;
+}
+
+.Footer p:hover {
+    cursor: pointer;
+    color: white;
+}
+
+.Footer a {
+    color: #bbb;
+    text-decoration: none;
+}
+
+.Footer h3 {
+    color: #bbb;
+}
+
+.Footer .Bottom p{
+    margin: 0;
+}
+
+.Footer .FooterContainer {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem 0;
+}
+
+.Footer .Third .Container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Footer .Third p{
+    font-size: 2rem;
+}
+
+@media only screen and (max-width: 450px) {
+    .Footer .FooterContainer {
+        flex-flow: column;
+    }
+
+    .Footer .Third .Container {
+        justify-content: space-evenly;
+    }
+}
